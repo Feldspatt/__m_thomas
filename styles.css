@@ -3,11 +3,11 @@
 :root {
     --max-width: 800px;
     --background-color: #f4f4f9;
-    --primary-color: #b5d9b2;
+    --primary-color: #dcf2df;
     --secondary-color: #ece8e8;
     --text-color: #333333;
     --heading-color: #505050;
-    --accent-color: #80b77e;
+    --accent-color: #468e58;;
 }
 
 body {
@@ -111,7 +111,7 @@ blockquote div {
 }
 
 footer {
-    background-color: var(--accent-color);
+    background-color: var(--primary-color);
     color: var(--heading-color);
     padding: 20px;
     text-align: center;
