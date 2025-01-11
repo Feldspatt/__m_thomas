@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --max-width: 800px;
+    --background-color: #f4f4f9;
+    --primary-color: #b5d9b2;
+    --secondary-color: #ece8e8;
+    --text-color: #333333;
+    --heading-color: #505050;
+    --accent-color: #80b77e;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+
+    background: url("assets/Leonardo_Kino_XL_a_soothing_view_of_lavander_under_a_clear_sky_2.jpg") fixed;
+    background-size: cover;
+    background-blend-mode: lighten;
+    background-color: #000000b0;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 800px;
+    gap: 2em;
+    padding: 2em;
+}
+
+.section {
+    background-color: var(--background-color);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin: 0;
+}
+header h2 {
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin: 0;
+}
+
+.triptic {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: min-content min-content;
+    grid-auto-flow: column;
+    gap: 1em;
+}
+
+.therapy-joke {
+    width: 100%;
+    grid-row-start: span 2;
+    display: flex;
+    justify-content: end;
+}
+
+.therapy-joke img {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    background-color: var(--background-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    padding: 20px;
+}
+section h2 {
+    border-bottom: 1px solid #e1e5ea;
+    padding-bottom: 5px;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+address {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 1em
+}
+
+address > *:nth-child(odd) {
+    text-align: right;
+    font-weight: bold;
+}
+
+blockquote {
+    background-color: var(--background-color);
+    font-style: italic;
+    line-height: 1.8;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+blockquote div {
+    text-align: end;
+}
+
+footer {
+    background-color: var(--accent-color);
+    color: var(--heading-color);
+    padding: 20px;
+    text-align: center;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .split {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+    header h2 {
+        font-size: 1.5rem;
+    }
+    section {
+        padding: 15px;
+    }
+    footer {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+}
