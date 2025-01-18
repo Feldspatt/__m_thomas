@@ -17,10 +17,10 @@ body {
     padding: 0;
     font-size: 1.2em;
 
-    background: url("assets/Leonardo_Kino_XL_a_soothing_view_of_lavander_under_a_clear_sky_2.jpg") fixed;
+    background-color: #b8c5d0;
+
     background-size: cover;
     background-blend-mode: lighten;
-    background-color: #000000b0;
 }
 
 header {
