@@ -26,7 +26,12 @@ body {
 header {
     background-color: var(--primary-color);
     padding: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 30px;
 }
 
 main {
@@ -38,8 +43,8 @@ main {
     padding: 2em;
 }
 
-.section {
-    background-color: var(--background-color);
+p {
+    text-align: justify;
 }
 
 header h1 {
